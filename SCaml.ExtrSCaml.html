@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>SCaml.ExtrSCaml</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">Library SCaml.ExtrSCaml</h1>
+
+<div class="code">
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Export</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.extraction.ExtrOcamlBasic.html#"><span class="id" title="library">ExtrOcamlBasic</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="SCaml.Basic.html#"><span class="id" title="library">Basic</span></a> <a class="idref" href="SCaml.Loop.html#"><span class="id" title="library">Loop</span></a> <a class="idref" href="SCaml.Operation.html#"><span class="id" title="library">Operation</span></a> <a class="idref" href="SCaml.Global.html#"><span class="id" title="library">Global</span></a> <a class="idref" href="SCaml.Crypto.html#"><span class="id" title="library">Crypto</span></a> <a class="idref" href="SCaml.Obj.html#"><span class="id" title="library">Obj</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">int</span> ⇒ "SCaml.int".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">nat</span> ⇒ "SCaml.nat".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">tz</span> ⇒ "SCaml.tz".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">int_plus</span> ⇒ "SCaml.(+)".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">int_sub</span> ⇒ "SCaml.(-)".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">nat_plus</span> ⇒ "SCaml.(+^)".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">nat_sub</span> ⇒ "SCaml.(-^)".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">not_eq_bool</span> ⇒ "SCaml.(&lt;&gt;)".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">lt_bool</span> ⇒ "SCaml.(&lt;)".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">unsafe_failwith</span> ⇒ "SCaml.failwith".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Loop.left_fuel</span> ⇒ "(fun _ f acc -&gt; Some (SCaml.Loop.left f acc))".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">bytes</span> ⇒ "SCaml.bytes".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">address</span> ⇒ "SCaml.address".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">key_hash</span> ⇒ "SCaml.key_hash".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Constant</span> <span class="id" title="var">contract_</span> "'a" ⇒ "'a SCaml.contract".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">operation</span> ⇒ "SCaml.operation".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Operation.t</span> ⇒ "SCaml.Operation.t".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Operation.transfer_tokens</span> ⇒ "SCaml.Operation.transfer_tokens".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Operation.set_delegate</span> ⇒ "SCaml.Operation.set_delegate".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">chain_id</span> ⇒ "SCaml.chain_id".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">env</span> ⇒ "unit".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Global.get_chain_id</span> ⇒ "SCaml.Global.get_chain_id".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Global.get_sender</span> ⇒ "SCaml.Global.get_sender".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">key</span> ⇒ "SCaml.key".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">signature</span> ⇒ "SCaml.signature".<br/>
+
+<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Crypto.check_signature</span> ⇒ "SCaml.Crypto.check_signature".<br/>
+<span class="id" title="keyword">Extract</span> <span class="id" title="var">Inlined</span> <span class="id" title="var">Constant</span> <span class="id" title="var">Obj.pack</span> ⇒ "SCaml.Obj.pack".<br/>
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>SCaml.Basic</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">Library SCaml.Basic</h1>
+
+<div class="code">
+<span class="id" title="keyword">Parameter</span> <a name="nat"><span class="id" title="axiom">nat</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="int"><span class="id" title="axiom">int</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+<span class="id" title="keyword">Parameter</span> <a name="int_plus"><span class="id" title="axiom">int_plus</span></a> : <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a>.<br/>
+<span class="id" title="keyword">Parameter</span> <a name="int_sub"><span class="id" title="axiom">int_sub</span></a> : <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#int"><span class="id" title="axiom">int</span></a>.<br/>
+<span class="id" title="keyword">Infix</span> <a name="00f623954fe4dd5f04bdc5ceb1846ff4"><span class="id" title="notation">&quot;</span></a>+" := <a class="idref" href="SCaml.Basic.html#int_plus"><span class="id" title="axiom">int_plus</span></a>.<br/>
+<span class="id" title="keyword">Infix</span> <a name="92f954e2654ef4dcce9e766d04225784"><span class="id" title="notation">&quot;</span></a>-" := <a class="idref" href="SCaml.Basic.html#int_sub"><span class="id" title="axiom">int_sub</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="nat_plus"><span class="id" title="axiom">nat_plus</span></a> : <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a>.<br/>
+<span class="id" title="keyword">Parameter</span> <a name="nat_sub"><span class="id" title="axiom">nat_sub</span></a> : <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#nat"><span class="id" title="axiom">nat</span></a>.<br/>
+<span class="id" title="keyword">Infix</span> <a name="38c7d42101553508d7aa09a2850cd784"><span class="id" title="notation">&quot;</span></a>+^" := <a class="idref" href="SCaml.Basic.html#nat_plus"><span class="id" title="axiom">nat_plus</span></a> (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 90).<br/>
+<span class="id" title="keyword">Infix</span> <a name="99a6ac337a9b9fe925fdde675824ff69"><span class="id" title="notation">&quot;</span></a>-^" := <a class="idref" href="SCaml.Basic.html#nat_sub"><span class="id" title="axiom">nat_sub</span></a>  (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 90).<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="not_eq_bool"><span class="id" title="axiom">not_eq_bool</span></a> : <span class="id" title="keyword">∀</span> {<span class="id" title="var">A</span>: <span class="id" title="keyword">Set</span>}, <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#bool"><span class="id" title="inductive">bool</span></a>.<br/>
+<span class="id" title="keyword">Parameter</span> <a name="lt_bool"><span class="id" title="axiom">lt_bool</span></a> : <span class="id" title="keyword">∀</span> {<span class="id" title="var">A</span>: <span class="id" title="keyword">Set</span>}, <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#bool"><span class="id" title="inductive">bool</span></a>.<br/>
+<span class="id" title="keyword">Infix</span> <a name="54bfcbbeeacda7395bff28f5ecd2f24e"><span class="id" title="notation">&quot;</span></a>&lt;&gt;?" := <a class="idref" href="SCaml.Basic.html#not_eq_bool"><span class="id" title="axiom">not_eq_bool</span></a> (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 60).<br/>
+<span class="id" title="keyword">Infix</span> <a name="18c4507890074b551cf1ff27c512fec4"><span class="id" title="notation">&quot;</span></a>&lt;?" := <a class="idref" href="SCaml.Basic.html#lt_bool"><span class="id" title="axiom">lt_bool</span></a> (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 60).<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="tz"><span class="id" title="axiom">tz</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Inductive</span> <a name="sum"><span class="id" title="inductive">sum</span></a> (<span class="id" title="var">A</span> <span class="id" title="var">B</span>: <span class="id" title="keyword">Set</span>) := <a name="Left"><span class="id" title="constructor">Left</span></a> (<span class="id" title="var">a</span> : <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a>) | <a name="Right"><span class="id" title="constructor">Right</span></a> (<span class="id" title="var">b</span> : <a class="idref" href="SCaml.Basic.html#B"><span class="id" title="variable">B</span></a>).<br/>
+<span class="id" title="var">Arguments</span> <a class="idref" href="SCaml.Basic.html#Left"><span class="id" title="constructor">Left</span></a> [<span class="id" title="var">A</span> <span class="id" title="var">B</span>].<br/>
+<span class="id" title="var">Arguments</span> <a class="idref" href="SCaml.Basic.html#Right"><span class="id" title="constructor">Right</span></a> [<span class="id" title="var">A</span> <span class="id" title="var">B</span>].<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="unsafe_failwith"><span class="id" title="axiom">unsafe_failwith</span></a> : <span class="id" title="keyword">∀</span> {<span class="id" title="var">A</span> <span class="id" title="var">B</span>:<span class="id" title="keyword">Set</span>}, <a class="idref" href="SCaml.Basic.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <a class="idref" href="SCaml.Basic.html#B"><span class="id" title="variable">B</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="bytes"><span class="id" title="axiom">bytes</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="address"><span class="id" title="axiom">address</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="key_hash"><span class="id" title="axiom">key_hash</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="timestamp"><span class="id" title="axiom">timestamp</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="chain_id"><span class="id" title="axiom">chain_id</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="env"><span class="id" title="axiom">env</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="contract_"><span class="id" title="axiom">contract_</span></a> : <span class="id" title="keyword">Set</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#1c93e43e07fbeaeb6a625cb6614beb5d"><span class="id" title="notation">→</span></a> <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="operation"><span class="id" title="axiom">operation</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Parameter</span> <a name="key"><span class="id" title="axiom">key</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+<span class="id" title="keyword">Parameter</span> <a name="signature"><span class="id" title="axiom">signature</span></a> : <span class="id" title="keyword">Set</span>.<br/>
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>
