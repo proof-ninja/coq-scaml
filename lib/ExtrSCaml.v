@@ -7,10 +7,22 @@ Extract Inlined Constant int => "SCaml.int".
 Extract Inlined Constant nat => "SCaml.nat".
 Extract Inlined Constant tz => "SCaml.tz".
 
+Extract Inductive sum => "SCaml.sum" ["Left" "Right"].
+
 Extract Inlined Constant int_plus => "SCaml.(+)".
-Extract Inlined Constant int_sub => "SCaml.(-)".
 Extract Inlined Constant nat_plus => "SCaml.(+^)".
+Extract Inlined Constant tz_plus => "SCaml.(+$)".
+
+Extract Inlined Constant int_sub => "SCaml.(-)".
 Extract Inlined Constant nat_sub => "SCaml.(-^)".
+Extract Inlined Constant tz_sub => "SCaml.(-$)".
+
+Extract Inlined Constant int_mult => "SCaml.( * )".
+Extract Inlined Constant nat_mult => "SCaml.( *^ )".
+Extract Inlined Constant tz_mult => "SCaml.( *$ )".
+
+Extract Inlined Constant int_minus => "SCaml.(~-)".
+Extract Inlined Constant nat_minus => "SCaml.(~-^)".
 
 Extract Inlined Constant not_eq_bool => "SCaml.(<>)".
 Extract Inlined Constant lt_bool => "SCaml.(<)".
