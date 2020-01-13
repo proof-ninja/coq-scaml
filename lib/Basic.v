@@ -1,4 +1,5 @@
 Parameter nat : Set.
+Parameter ocaml_int : Set.
 
 Parameter int : Set.
 Parameter int_plus : int -> int -> int.
