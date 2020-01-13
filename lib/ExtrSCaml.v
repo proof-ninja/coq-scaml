@@ -2,6 +2,7 @@ Require Export ExtrOcamlBasic.
 
 Require Import Basic Loop Operation Global Crypto Obj.
 
+Extract Inlined Constant ocaml_int => "SCaml.ocaml_int".
 Extract Inlined Constant int => "SCaml.int".
 Extract Inlined Constant nat => "SCaml.nat".
 Extract Inlined Constant tz => "SCaml.tz".
