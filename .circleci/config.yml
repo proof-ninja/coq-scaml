@@ -11,8 +11,8 @@ jobs:
           make
           make html
       - persist_to_workspace:
-          root: html
-          paths: .
+          root: .
+          paths: html
   docs-deploy:
     docker:
       - image: node:8.10.0
@@ -32,7 +32,7 @@ jobs:
             - "d9:43:ce:b0:a2:58:e1:b7:2e:bf:8e:ea:bd:7b:f4:aa"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --message "[skip ci] doc upload" --dist .
+          command: gh-pages --message "[skip ci] doc upload" --dist html
 
 workflows:
   version: 2
