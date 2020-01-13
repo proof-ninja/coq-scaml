@@ -1,9 +1,0 @@
--R lib SCaml
-lib/Basic.v
-lib/Loop.v
-lib/Operation.v
-lib/Global.v
-lib/Crypto.v
-lib/Obj.v
-lib/ExtrSCaml.v
-lib/SCaml.v
